@@ -1,10 +1,5 @@
 pipeline {
-agent {
-node {
-label 'nodejs'
-}
-}
-stages {
+agent { node { label 'nodejs' } }
 stages {
 stage('Run Tests') {
 parallel {
